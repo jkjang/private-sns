@@ -1,12 +1,12 @@
 const express = require('express');
 const path = require('path');
-
+const renderer = require('./renderer');
 const app = express();
 
-// app.use(routes); app.get('/', render);
-app.use(express.static(path.resolve('../react-app/build')));
+app.get('*', renderer);
+app.use('/', express.static(path.resolve('../../front-end/build')));
 // app.use(render);
 
 app.listen(4000, () => {
-    console.log('Server is listening to port 4000!');
+    console.log('Listening on port 8080');
 });
