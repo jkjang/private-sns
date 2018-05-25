@@ -1,8 +1,5 @@
-const express = require('express');
-const api = require('./api');
+const document = require('./document');
 
-const routes = express.Router();
-
-routes.use('/api', api);
-
-module.exports = routes;
+module.exports = (router) => {
+  document(router);
+};
