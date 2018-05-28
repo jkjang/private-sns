@@ -11,9 +11,9 @@ const router = express.Router();
 const url = process.env.MONGODB_URI || 'mongodb://sysop:sysop@localhost:40000/cube_db1';
 
 try {
-  mongoose.connect(url, {});
+		mongoose.connect(url, {});
 } catch (error) {
-  console.log(error);
+		console.log(error);
 }
 
 const port = 5000 || process.env.PORT;
@@ -29,5 +29,5 @@ app.use(helmet());
 app.use('/api', router);
 
 app.listen(port, () => {
-  console.log(`Server started at port: ${port}`);
+		console.log(`Server started at port: ${port}`);
 });
