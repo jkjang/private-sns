@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import loadDocuments from './../redux/actions/actions';
+import MainHeader from './../components/base/MainHeader';
 
 const mapStateToProps = state => ({ documents: state.documents.documents });
 
@@ -11,16 +12,13 @@ class Randing extends Component {
       .loadDocuments();
   }
   render() {
-    console.log('aaa');
-    const documents = this
-      .props
-      .documents
-      .reverse()
-      .map(docment => <div>{docment.content}</div>);
+    // const documents = this   .props   .documents   .reverse()   .map(docment =>
+    // <div>{docment.title}</div>);
 
     return (
       <div>
-        {documents}
+        <MainHeader />
+        <div>aaa</div>
       </div>
     );
   }
