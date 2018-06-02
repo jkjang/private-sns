@@ -1,6 +1,6 @@
 import React from 'react';
 import './MainHeader.scss';
-import logoImage from 'path';
+import logoImage from '~/a';
 
 const MainHeader = () => (
   <div className="main-header main-landing">
