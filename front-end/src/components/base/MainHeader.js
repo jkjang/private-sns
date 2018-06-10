@@ -1,17 +1,27 @@
+import 'bootstrap/scss/bootstrap.scss';
+import 'bootstrap/scss/bootstrap-grid.scss';
+import 'bootstrap/scss/bootstrap-reboot.scss';
+
 import React from 'react';
+import logo from 'static/images/logo.png';
+import logoColor from 'static/images/logo-colored-small.png';
 import './MainHeader.scss';
-import logoImage from '~/a';
 
 const MainHeader = () => (
-  <div className="main-header main-landing">
-    <div className="content-bg-wrap bg-landing" />
+  <div
+    className="header--standard header--standard-landing"
+    id="header--standard"
+  >
     <div className="container">
-      <div className="row" />]
-      <div className="col col-lg-6 m-auto col-md-12 col-sm-12 col-12">
-        <div className="main-header-content" />
-        <a href="#aa" className="logo">
+      <div className="header--standard-wrap">
+        <a href="/asdfas" className="logo">
           <div className="img-wrap">
-            <img src="img/logo-landing.png" alt="Olympus" />
+            <img src={logo} alt="Olympus" />
+            <img src={logoColor} alt="Olympus" className="logo-colored" />
+          </div>
+          <div className="title-block">
+            <h6 className="logo-title">olympus</h6>
+            <div className="sub-title">SOCIAL NETWORK</div>
           </div>
         </a>
       </div>

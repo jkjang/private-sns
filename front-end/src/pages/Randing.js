@@ -18,7 +18,6 @@ class Randing extends Component {
     return (
       <div>
         <MainHeader />
-        <div>aaa</div>
       </div>
     );
   }
