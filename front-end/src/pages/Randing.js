@@ -16,8 +16,12 @@ class Randing extends Component {
     // <div>{docment.title}</div>);
 
     return (
-      <div>
+      <div
+        className="main-header main-header-fullwidth main-header-has-header-standard"
+      >
         <MainHeader />
+        <div className="header-spacer--standard" />
+        <div className="content-bg-wrap bg-landing" />
       </div>
     );
   }

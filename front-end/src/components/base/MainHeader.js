@@ -1,7 +1,3 @@
-import 'bootstrap/scss/bootstrap.scss';
-import 'bootstrap/scss/bootstrap-grid.scss';
-import 'bootstrap/scss/bootstrap-reboot.scss';
-
 import React from 'react';
 import logo from 'static/images/logo.png';
 import logoColor from 'static/images/logo-colored-small.png';
