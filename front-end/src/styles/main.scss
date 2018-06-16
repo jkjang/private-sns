@@ -1,15 +1,2 @@
-/*************** #main ---------------*/
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "custom";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/reboot";
-
-/*------------- #THEME-STYLES --------------*/
-
-@import "theme-styles/variables";
-@import "theme-styles/mixins";
-@import "theme-styles/header";
-
-/*------------- #BLOCKS --------------*/
-@import "blocks/main-header";
+@import "utils";
+@import "base/all";

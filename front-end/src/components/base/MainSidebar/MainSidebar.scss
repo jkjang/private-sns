@@ -1,0 +1,93 @@
+@import "utils";
+
+.sidebar {
+  background: #fff;
+  width: 280px;
+  box-shadow: inset -1px 0 0 0 rgba(223, 223, 223, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 910;
+  box-shadow: 0 0 34px 0 rgba(63, 66, 87, 0.1);
+  .sidebar-content {
+    height: 100vh;
+  }
+}
+.logo-section {
+  padding: 2rem;
+  margin-bottom: 1rem;
+  a {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+    text-decoration: none;
+  }
+}
+.primary {
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: #23242b;
+    opacity: 1;
+    overflow: hidden;
+    margin-right: 1rem;
+  }
+  a.active {
+    font-weight: 600;
+    color: #23242b;
+    border-right: 0.128rem solid #8e919d;
+  }
+  a:hover {
+    background-color: #f6f7fb;
+  }
+  a {
+    display: block;
+    padding: 10px 45px;
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-align: left;
+    color: #23242b;
+    position: relative;
+    text-decoration: none;
+  }
+  .align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  .flex-row {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+  }
+  .d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .list-unstyled {
+    @include list-unstyled;
+  }
+}
+
+.left-menu-icon {
+  fill: $oc-gray-7;
+  transition: all 0.3s ease;
+  margin-right: 25px;
+}
+
+// svg {
+//   width: 20px;
+// }
+// svg:not(:root) {
+//   overflow: hidden;
+// }
+// svg:not(:root) {
+//   overflow: hidden;
+// }
+// [class*=" -icon"],
+// [class^="olymp-"] {
+//   height: 26px;
+//   width: 26px;
+//   display: inline-block;
+// }

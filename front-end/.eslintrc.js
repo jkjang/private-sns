@@ -1,15 +1,11 @@
 const path = require('path');
 
 module.exports = {
-  extends: [
-    'react-app', 'airbnb'
-  ],
+  extends: ['react-app', 'airbnb'],
   settings: {
     'import/resolver': {
-      node: {
-        paths: [path.resolve('./src')]
-      }
-    }
+      node: { paths: [path.resolve('./src')] },
+    },
   },
   rules: {
     'class-methods-use-this': 0,
@@ -38,12 +34,13 @@ module.exports = {
     dangerouslySetInnerHTML: 0,
     'no-param-reassign': 0,
     'prefer-const': 1,
-    'no-mixed-operators': 0
+    'no-mixed-operators': 0,
+    'react/no-did-update-set-state': 0,
   },
   overrides: {
-    files: ['src/*.js']
+    files: ['src/*.js'],
   },
   env: {
-    jest: true
-  }
+    jest: true,
+  },
 };

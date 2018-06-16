@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import { Randing, Timeline } from './../pages';
+import { Randing, Timeline } from 'pages';
 
 class App extends Component {
   render() {
