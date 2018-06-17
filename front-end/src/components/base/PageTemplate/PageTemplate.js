@@ -5,13 +5,17 @@ import 'components/base/PageTemplate/PageTemplate.scss';
 
 type Props = {
   header: Node,
-  children: Node,
+  topbar: Node,
+  main: Node,
 };
 
-const PageTemplate = ({ header, children }: Props) => (
-  <div className="container">
+const PageTemplate = ({ header, topbar, main }: Props) => (
+  <div className="main-wrapper d-flex flex-row justify-content-between">
     {header}
-    <main>children{children}</main>
+    <main className="main-content">
+      <div>{topbar}</div>
+      <div>{main}</div>
+    </main>
   </div>
 );
 

@@ -1,9 +1,16 @@
 .main-wrapper {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 280px;
+}
+.shadow-global-sidebar {
+  width: 280px;
+  flex: 1;
+}
+.main-content {
+  padding: 2rem 5rem;
+  position: relative;
+  z-index: 900;
+  width: 100%;
 }
 
 @media (min-width: 576px) {
