@@ -8,7 +8,7 @@ import Post from 'components/post/Post';
 
 const mapStateToProps = state => ({ documents: state.documents.documents });
 
-class Randing extends Component {
+class Posts extends Component {
   componentDidMount() {
     this.props.loadDocuments();
   }
@@ -20,4 +20,4 @@ class Randing extends Component {
 export default connect(
   mapStateToProps,
   { loadDocuments },
-)(Randing);
+)(Posts);

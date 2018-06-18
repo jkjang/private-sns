@@ -6,7 +6,7 @@ const MainHeader = () => (
     <div className="sidebar-content">
       <div className="sidebar-top">
         <div className="logo-section">
-          <a href="/">Private SNS</a>
+          <a href="/">Fishing Story</a>
         </div>
         <nav className="primary">
           <ul className="list-unstyled">

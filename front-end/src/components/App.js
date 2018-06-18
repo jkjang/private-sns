@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import { Randing, Timeline } from 'pages';
+import { Randing, Posts } from 'pages';
 
 class App extends Component {
   render() {
@@ -9,8 +9,8 @@ class App extends Component {
       <div>
         <Switch>
           <Route exact path="/" component={Randing} />
-          <Route exact path="/Timeline" component={Timeline} />
-          <Route path="/Timeline/:name" component={Timeline} />
+          <Route exact path="/posts" component={Posts} />
+          <Route path="/Timeline/:name" component={Randing} />
         </Switch>
       </div>
     );

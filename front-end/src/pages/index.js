@@ -1,2 +1,2 @@
-export { default as Timeline } from './Timeline';
+export { default as Posts } from './Posts';
 export { default as Randing } from './Randing';
