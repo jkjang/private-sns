@@ -1,0 +1,35 @@
+.main-wrapper {
+  width: 100%;
+  margin-left: 280px;
+}
+.shadow-global-sidebar {
+  width: 280px;
+  flex: 1;
+}
+.main-content {
+  padding: 2rem 5rem;
+  position: relative;
+  z-index: 900;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .main-wrapper {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .main-wrapper {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .main-wrapper {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-wrapper {
+    max-width: 1140px;
+  }
+}
