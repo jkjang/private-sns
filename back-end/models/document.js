@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
-
-const DocumentSchema = new mongoose.Schema(
+const Schema = mongoose.Schema
+const Document = new Schema(
     {
         _id: mongoose.Schema.Types.ObjectId,
         title: String,
@@ -9,4 +9,4 @@ const DocumentSchema = new mongoose.Schema(
     { collection: 'cb_document' }
 )
 
-module.exports = mongoose.model('Document', DocumentSchema)
+module.exports = mongoose.model('Document', Document)
