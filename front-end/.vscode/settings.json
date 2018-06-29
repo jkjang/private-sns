@@ -1,9 +1,10 @@
 {
+  "workbench.iconTheme": "vs-minimal",
   "git.autofetch": true,
   "explorer.confirmDelete": false,
   "window.zoomLevel": 0,
   "explorer.confirmDragAndDrop": false,
-  "workbench.colorTheme": "Solarized Dark",
+  "workbench.colorTheme": "Monokai Dimmed",
   "files.associations": {
     "*.js": "javascriptreact"
   },
